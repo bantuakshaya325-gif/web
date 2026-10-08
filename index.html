@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PageTurner Library</title>
+    <meta
+      name="description"
+      content="A modern online library website for exploring and discovering books."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">P</span>
+          <span>PageTurner</span>
+        </div>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#catalog">Catalog</a>
+          <a href="#featured">Featured</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <button class="nav-cta">Join library</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Your digital reading room</p>
+            <h1>Discover stories that stay with you.</h1>
+            <p class="hero-text">
+              Browse thousands of books, find your next favorite read, and build
+              your personal library from anywhere.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-btn" href="#catalog">Explore books</a>
+              <a class="secondary-btn" href="#featured">Featured picks</a>
+            </div>
+
+            <div class="stats">
+              <div>
+                <strong>18k+</strong>
+                <span>Books</span>
+              </div>
+              <div>
+                <strong>4.8/5</strong>
+                <span>Reader rating</span>
+              </div>
+              <div>
+                <strong>120+</strong>
+                <span>Authors</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured book display">
+            <div class="book-card large-card">
+              <div class="book-cover cover-one"></div>
+              <div class="book-info">
+                <p class="book-tag">Bestseller</p>
+                <h3>The Midnight Library</h3>
+                <p>Matt Haig</p>
+                <div class="rating">
+                  <span>★</span>
+                  <span>4.9</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mini-card">
+              <span>New Release</span>
+              <strong>Quiet Storm</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog" id="catalog">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Book catalog</p>
+              <h2>Find what fits your mood</h2>
+            </div>
+
+            <label class="search-wrap" aria-label="Search books">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M10 2a8 8 0 105.33 13.66l4.37 4.37 1.41-1.41-4.37-4.37A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"
+                />
+              </svg>
+              <input type="search" id="searchInput" placeholder="Search by title, author, or genre" />
+            </label>
+          </div>
+
+          <div class="filter-row" id="filterRow" aria-label="Book category filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Fiction">Fiction</button>
+            <button class="filter-btn" data-filter="Fantasy">Fantasy</button>
+            <button class="filter-btn" data-filter="Science">Science</button>
+            <button class="filter-btn" data-filter="History">History</button>
+            <button class="filter-btn" data-filter="Biography">Biography</button>
+          </div>
+
+          <div class="book-grid" id="bookGrid"></div>
+        </div>
+      </section>
+
+      <section class="featured" id="featured">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Reader favorites</p>
+              <h2>Featured collections</h2>
+            </div>
+          </div>
+
+          <div class="featured-grid">
+            <article class="feature-box highlight">
+              <div>
+                <p class="feature-label">Curated for you</p>
+                <h3>Weekend reads</h3>
+              </div>
+              <p>Light, engaging, and perfect for slow afternoons.</p>
+            </article>
+
+            <article class="feature-box">
+              <div>
+                <p class="feature-label">Top picks</p>
+                <h3>Mind-expanding non-fiction</h3>
+              </div>
+              <p>Fresh ideas and real-world stories to challenge your thinking.</p>
+            </article>
+
+            <article class="feature-box">
+              <div>
+                <p class="feature-label">Classic shelf</p>
+                <h3>Timeless literature</h3>
+              </div>
+              <p>The great works that shaped culture and imagination.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-inner">
+          <div class="about-copy">
+            <p class="eyebrow">Why readers love us</p>
+            <h2>Built for curious minds and lifelong learners.</h2>
+            <p>
+              PageTurner helps readers discover books that match their interests,
+              sharpen their attention, and bring stories to life in a beautifully
+              organized digital library.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div>
+              <strong>1,200+</strong>
+              <span>Active members</span>
+            </div>
+            <div>
+              <strong>88%</strong>
+              <span>Return readers</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>Digital access</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 PageTurner Library</p>
+        <div class="footer-links">
+          <a href="#catalog">Catalog</a>
+          <a href="#about">About</a>
+          <a href="#home">Top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
